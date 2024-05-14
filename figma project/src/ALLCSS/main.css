@@ -1,0 +1,69 @@
+.main-container {
+  background-color:rgb(199, 224, 246);
+
+   max-width: 1500px;
+   margin: 0px auto;
+   /* margin-bottom: 40px; */
+   padding-bottom: 20PX;
+}
+.lgout{
+  margin-right: 90px;
+  padding-top: 30px;
+  height: 30px;
+  width: 60px;
+}
+.create-blog{
+  padding-left:720px;
+  padding-top: 30px;
+  height: 30px;
+  width: 60px;
+
+}
+.create-blog button{
+  height: 40px;
+  width: 110px;
+  border-radius: 20px;
+  background-color: red;
+  color: white;
+  border: none;
+
+}
+.lgout button{
+  height: 40px;
+  width: 110px;
+  border-radius: 20px;
+  background-color: red;
+  color: white;
+  border: none;
+}
+
+.heading1 {
+  padding: 0px 70px;
+}
+
+.allpost {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0px 100px;
+}
+.blog-heading{
+  display: flex;
+  justify-content:space-between;
+
+}
+.changebutton{
+  background-color: red;
+  color: white;
+  border: none;
+}
+.button-new{
+  height: 70px;
+  width: 120px;
+  border-radius: 20px;
+  margin: 20px;
+}
+.main-content{
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
