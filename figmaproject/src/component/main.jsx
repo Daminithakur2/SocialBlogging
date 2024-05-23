@@ -94,8 +94,8 @@ const Main = () => {
                     <div className='find-div'>FIND ME ON INSTAGRAM</div>
                     <div className='all-img'>
                         {
-                            posts.slice(0,5).map((item, index) => {
-                                return <img className='img1' src={`http://localhost:5000/${item.image}`} alt='imag1'></img>
+                            posts.slice(0,6).map((item, index) => {
+                                return <img className='img1' src={`https://socialblogging.onrender.com/${item.image}`} alt='imag1'></img>
 
                             })
                         }

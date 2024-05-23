@@ -1,6 +1,6 @@
 import axios from "axios";
 
-const BASE_URL = " http://localhost:5000"
+const BASE_URL = "https://socialblogging.onrender.com"
 const token = localStorage.getItem("token")
 console.log(token,'dsfkmdkfs')
 const API = axios.create({
