@@ -53,9 +53,9 @@ const Newblog = () => {
     <>
       <div className='containers'>
 
-        <div className='con'><h1>BLOG POST</h1></div>
+        <div className='con'><h1>CREATE NEW BLOGS</h1></div>
         <div className='blogspages'>
-          <div>
+          <div className='toin'>
             <h1 style={{ textAlign: 'center' }}>NEW BLOG</h1>
             <div style={{ display: 'flex', justifyContent: "center", alignItems: "center", flexDirection: 'column', gap: 20 }}>
               <input className='input-jam' type='text' value={formData.title} onChange={(e) => setformData({ ...formData, title: e.target.value })} placeholder='title'></input>

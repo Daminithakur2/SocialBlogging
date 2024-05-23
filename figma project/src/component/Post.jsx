@@ -9,7 +9,7 @@ import { FaRegHeart } from "react-icons/fa";
 import { MdDeleteForever } from "react-icons/md";
 import { MdEdit } from "react-icons/md";
 import { UNSAFE_DataRouterStateContext, useNavigate } from 'react-router-dom';
-import Image from '../image/OIP.jpeg'
+// import Image from '../image/OIP.jpeg'
 import { useDispatch } from 'react-redux';
 import { blogcomments, deletecomment, getPostData, updateByPatch } from './API/endpoints';
 import { getdeletepost } from '../Redux/actions/user';
@@ -89,21 +89,21 @@ const Post = ({ data, postdate, render, setRender }) => {
     }
     return (
         <>
-            <div className="post" key={data._id}>
 
-                <div onClick={() => navigate(`/fullpage/${data._id}`)}>
-                    <img className="postimage" src={`http://localhost:5000/${data.image}`} alt="yy"></img>
-                    <h2 className="heading">Title:<span style={{ fontWeight: '500' }}>{data.title}</span></h2>
-                    <span style={{ fontWeight: '500' }}>{data.description}</span>
-                    <hr></hr>
-                </div>
-                <div className="details">
+        
+            <div className="post" key={data._id}>
+                <div className='new-post'><div onClick={() => navigate(`/fullpage/${data._id}`)}>
+                    <img className="postimage" src={`http://localhost:5000/${data.image}`} alt="yy"></img></div>
+                   <div className='new-divs'> <h2 className="heading"><span style={{ fontWeight: '500',color:'rgb(187,90,58)' }}>{data.title}</span></h2>
+                    <span style={{ fontWeight: '500',color:'rgb(187,90,58)'}}>{data.description}</span>
+                    <div className="details">
                     <img className='image' src={`http://localhost:5000/${data.image}`} alt='imag1'></img>
                     <div className="name">
                         <span className='namedam'>Damini</span>
                         <div className="details2">
                             <p className='datedam'>{postdate}</p>
                             {data.liked ? <FaHeart className="al" onClick={() => togglelike(data._id)}
+
                                 style={{ color: "red" }} /> : <FaRegHeart className="al" onClick={() => togglelike(data._id)}
                                     style={{ color: "black" }} />}
                             <FaComment onClick={() => setShow(!show)} className="al" />
@@ -115,7 +115,12 @@ const Post = ({ data, postdate, render, setRender }) => {
                             <div className='edit'>   <MdEdit className='editicon' onClick={() => navigate(`/Updatenew/${data._id}`)} /></div>
                         </div>
                     </div>
+                </div></div>
+                    
                 </div>
+
+                
+          
                 {
                     data.comment.length ? <h4 style={{ margin: 0 }}>Comments:</h4> : null}
                 {
@@ -139,8 +144,10 @@ const Post = ({ data, postdate, render, setRender }) => {
 
                     </div>
                 }
+                
             </div>
-
+            {/* <button className='butt-new' >ALL POST</button> */}
+        
 
         </>
 

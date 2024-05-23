@@ -1,0 +1,23 @@
+.container-pg3{
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    position: relative;
+}
+.img-pg3{
+    height: 530px;
+    width: 480px;
+}
+.last-new{
+    background-color: white;
+    position: absolute;
+    bottom: 1px;
+   
+   
+}
+.span-last1{
+    color: black;
+    font-size:50px;
+    font-weight: 700;
+    
+}

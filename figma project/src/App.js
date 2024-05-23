@@ -11,8 +11,8 @@ import Updatenew from './component/Updatenew';
 // import Profile from './component/profile';
 import Forgetpassword from './component/Forgetpassword';
 import Setpassword from './component/setpassword';
-import { ToastContainer} from 'react-toastify';
-  import 'react-toastify/dist/ReactToastify.css';
+import { ToastContainer } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 import Fullpage from './component/Fullpage';
 import { Provider } from 'react-redux';
 import { store } from './Redux/store';
@@ -21,6 +21,12 @@ import Memo from './memo';
 import Home from './Home';
 import Userprofile from './component/Userprofile';
 import Editprofile from './component/Editprofile';
+import Heardernew from './component/heardernew';
+import LowerHeader from './component/LowerHeader';
+import Lowernew from './component/lowernew';
+import Page3 from './component/Page3';
+import Allblog from './component/Allblog';
+import About from './component/About';
 
 
 
@@ -31,7 +37,14 @@ function App1() {
 
   const token = localStorage.getItem("token")
   useEffect(() => {
-    if (location.pathname === '/' || location.pathname === "/signup" || location.pathname === "/profile" || location.pathname==="/forget" || location.pathname==="/setpassword/:email" || location.pathname==="/editprofile" || location.pathname === "/userprofile") {
+    if (location.pathname === '/' ||
+      location.pathname === "/signup" ||
+      location.pathname === "/profile" ||
+      location.pathname === "/forget" ||
+      location.pathname.startsWith("/setpassword") ||
+      location.pathname === "/editprofile" ||
+      location.pathname === "/hearder" ||
+      location.pathname === "/userprofile") {
       setHideNavBar(true)
     } else { setHideNavBar(false) }
   }, [location])
@@ -42,7 +55,12 @@ function App1() {
   }, [token])
   return (
     <>
-      {!hideNavBar && <Header></Header>}
+
+
+      {!hideNavBar && <>
+        <Heardernew />
+        <Lowernew />
+      </>}
       <ToastContainer />
       <Routes>
         <Route path='/' element={<Loginpage></Loginpage>}></Route>
@@ -50,7 +68,6 @@ function App1() {
         <Route path='/signup' element={<Signup></Signup>}></Route>
         <Route path='/newblog' element={<Newblog></Newblog>}></Route>
         <Route path='/Updatenew/:id' element={<Updatenew></Updatenew>}></Route>
-        {/* <Route path='/profile' element={<Profile></Profile>}></Route> */}
         <Route path='/forget' element={<Forgetpassword></Forgetpassword>}></Route>
         <Route path='/setpassword/:email' element={<Setpassword></Setpassword>}></Route>
         <Route path='/fullpage/:id' element={<Fullpage></Fullpage>}></Route>
@@ -58,11 +75,15 @@ function App1() {
         <Route path='/Home' element={<Home></Home>}></Route>
         <Route path='/userprofile' element={<Userprofile></Userprofile>}></Route>
         <Route path='/editprofile' element={<Editprofile></Editprofile>}></Route>
+        <Route path='/allblog' element={<Allblog></Allblog>}></Route>
+        <Route path='/about' element={<About></About>}></Route>
 
 
 
 
-        
+
+
+
 
 
       </Routes>
@@ -77,9 +98,9 @@ function App() {
     // <div className="App">
     <div style={{ height: '100%' }}>
       <Provider store={store}>
-      <BrowserRouter>
-        <App1></App1>
-      </BrowserRouter>
+        <BrowserRouter>
+          <App1></App1>
+        </BrowserRouter>
       </Provider>
 
     </div>

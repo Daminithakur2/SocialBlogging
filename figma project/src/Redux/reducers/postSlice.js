@@ -8,7 +8,8 @@ const initialState = {
     posts: [],
     getOnePost : null,
     loading: false,
-    error:null
+    error:null,
+    searchT:[]
 }
 
 export const postSlice = createSlice({
@@ -52,7 +53,8 @@ export const postSlice = createSlice({
             })
             builders.addCase(getserachpost.fulfilled,(state,action)=>{
                 state.loading=false
-                state.getOnePost=action.payload
+                state.posts=action.payload
+                state.searchT = action.payload
             })
             builders.addCase(getserachpost.rejected,(state,action)=>{
                 state.loading=false

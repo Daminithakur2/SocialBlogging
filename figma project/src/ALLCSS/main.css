@@ -1,5 +1,5 @@
 .main-container {
-  background-color:rgb(199, 224, 246);
+  background-color:white;
 
    max-width: 1500px;
    margin: 0px auto;
@@ -41,11 +41,11 @@
   padding: 0px 70px;
 }
 
-.allpost {
+/* .allpost {
   display: flex;
   flex-wrap: wrap;
   padding: 0px 100px;
-}
+} */
 .blog-heading{
   display: flex;
   justify-content:space-between;
@@ -62,8 +62,97 @@
   border-radius: 20px;
   margin: 20px;
 }
-.main-content{
+/* .main-content{
   display: flex;
   justify-content: space-evenly;
   flex-wrap: wrap;
+} */
+.butt-new{
+  margin-left: 50px;
+  border: none;
+  padding: 20px;
+  border-radius: 20px;
+  width: 150px;
+  background-color:rgb(187, 90, 58);
+  color: white;
+  font-size:20px ;
+  font-weight: 400;
+
+}
+.create-new{
+  display: flex;
+  justify-content: center;
+  background-color: rgb(187, 90, 58);
+  height: 400px;
+  width: 350px;
+  margin-left: 90px;
+  margin-top: 30px;
+}
+.con-newm{
+  display: flex;
+  justify-content: space-evenly;
+  padding-left: 80px;
+  padding-right: 80px;
+}
+.pink-div{
+  margin-top: 70px;
+  background-color: rgb(239, 204, 210);
+  width: 550px;
+  /* margin-right: 30px; */
+}
+.letus-new{
+  font-size: 35px;
+  font-weight: 700;
+  color: white;
+display: flex; 
+justify-content: center;
+position: relative;
+left: 45px;
+top: 40px;
+}
+.button-newadd{
+  height: 40px;
+  border: none;
+  border-radius: 10px;
+  background-color:black ;
+  color: white;
+ 
+  
+}
+.jji{
+  color: black;
+  margin: 10px;
+}
+.lstone-icons{
+  display: flex;
+  justify-content: center;
+  padding-top: 150px;
+  font-size: 40px;
+}
+.all-img{
+  width: 500px;
+  display: flex;
+  padding: 60px;
+  flex-wrap: wrap;
+}
+.img1{
+  height: 200px;
+  width: 200px;
+  margin: 5px;
+border-radius: 20px;
+}
+.find-div{
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+  font-size: large;
+  font-weight: 600;
+}
+.jj{
+  display: flex;
+  justify-content: center;
+  height: 50px;
+  position: relative;
+  top: 250px;
+  right: 40%
 }

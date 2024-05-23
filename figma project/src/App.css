@@ -32,7 +32,7 @@ image-found{
     height: 30px;
     width: 110px;
     border-radius: 20px;
-    background-color:red;
+    background-color:rgb(187, 90, 58);
     border: none;
     color: white;
 }
@@ -93,21 +93,23 @@ image-found{
     align-items: center;    
     background-color: white;
     border-radius: 20px;
-    /* padding: 20px; */
-    margin: 0px auto;
+    padding: 20px;
+    margin: 20px auto;
+    
     
     
     
 }
+
 .con{
     margin-left: 70px;
 }
 .containers{
-    background-color:rgb(199, 224, 246);
+    background-color:rgb(250, 210, 217);
     padding-bottom: 20px;
 }
 .red{
-    background-color: red;
+    background-color:rgb(187, 90, 58);
     width: 100%;
     color: white;
     text-align: center;
@@ -139,7 +141,7 @@ image-found{
     width: 100px;
     border-radius: 10px;
     color: white;
-    background-color: red;
+    background-color:rgb(187, 90, 58);
     border: 2px solid white;
 }
 .headings h1 {
@@ -149,7 +151,7 @@ image-found{
     height: 40px;
     width: 100px;
     border-radius: 10px;
-    background-color:red;
+    background-color:rgb(187, 90, 58);
     color: white;
 
 }
@@ -167,7 +169,7 @@ image-found{
     height: 30px;
     width: 200px;
     border: none;
-    border-bottom: 2px solid red;
+    border-bottom: 2px solid brown;
 
 }
 .cover-image{
@@ -247,9 +249,28 @@ image-found{
     display: block;
     padding-left: 60px;
 }
+.mainabout{
+  display: flex;
+  justify-content: space-evenly;
+  background-color:rgb(252, 219, 225) ;
+}
+.sty{
+  font-size: 40px;
+  font-weight: 700;
+}
 .spanning{
     font-size: xx-large;
     font-weight: 700;
+}
+.itsall{
+  display: flex;
+  flex-wrap: wrap;
+}
+.coinone{
+  display: flex;
+  justify-content: center;
+  font-size: 30px;
+  font-weight: 600;
 }
 .cen-upl{
   padding-top: 70px;

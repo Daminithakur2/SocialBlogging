@@ -69,7 +69,7 @@ const LowerHeader = ({ setPost }) => {
     return (
         <div className="bottom-header">
             <div className="inside-header bottom-inside-header">
-                <div className="filter">Filter</div>
+                <div className="filter" style={{borderRight:'2px solid',padding:'20px'}}>Filter</div>
 
                 <div className="t">
                     <div className="t1">
@@ -96,7 +96,7 @@ const LowerHeader = ({ setPost }) => {
 
                 <div className="t3">
                     <div className="search">Search</div>
-                    <div className="input">
+                    <div className="input" style={{display:'flex'}}>
                         <input
                             className="search1"
                             type="search"

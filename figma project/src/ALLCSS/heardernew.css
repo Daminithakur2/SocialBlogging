@@ -1,0 +1,75 @@
+.containernew{
+    background-color: black;
+    display: flex;
+    justify-content: space-around;
+    height: 50px;
+    position: sticky;
+    top: 0;
+    z-index: 999;
+}
+.iconseach{
+    position: relative;
+    color:white;
+    left: 140px;
+    bottom: 20px;
+    
+    
+}
+.input-new{
+    border: none;
+    border-radius: 20px;
+    height: 20px;
+    background-color: black;
+    color: white ;
+    
+}
+.sec-new{
+    height: '100%';
+    width: 150px;
+    background-color: black;
+    color: white;
+    position: absolute;
+    top: 50px;
+    z-index: 4;
+    padding: 10px;
+}
+.div-new{
+    margin-top: 10px;
+}
+.input-new::placeholder{
+    color: white;
+    font-size: medium;
+}
+.published-new{
+    color: white;
+}
+.created-new{
+    color: white;
+}
+.newdiv1{
+    display: flex;
+    padding-top: 10px;
+}
+.newdiv2{
+    display: flex;
+    padding-top: 10px;
+
+}
+.icon-onen{
+    color: white;
+    margin: 4px;
+}
+.newdiv3{
+    padding-top: 10px;
+    
+}
+.indated{
+height: 25px;
+width: 130px;
+}
+.select-new{
+    height: 25px;
+width: 130px;
+    
+
+}
