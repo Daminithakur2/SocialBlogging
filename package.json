@@ -1,0 +1,16 @@
+{
+    "name": "socialblog",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+      "install-server": "cd backend && npm install",
+      "start-server": "cd backend && node server.js",
+      "install-client": "cd figmaproject && npm install",
+      "build-client": "cd figmaproject && npm run build",
+      "start-client": "cd figmaproject && npm run start"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC"
+  }
