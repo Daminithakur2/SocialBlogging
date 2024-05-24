@@ -10,6 +10,7 @@
       "build-client": "cd figmaproject && npm run build",
       "start-client": "cd figmaproject && npm run start"
     },
+    
     "keywords": [],
     "author": "",
     "license": "ISC"
