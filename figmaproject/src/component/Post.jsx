@@ -93,11 +93,11 @@ const Post = ({ data, postdate, render, setRender }) => {
         
             <div className="post" key={data._id}>
                 <div className='new-post'><div onClick={() => navigate(`/fullpage/${data._id}`)}>
-                    <img className="postimage" src={`https://socialblogging.onrender.com/${data.image}`} alt="yy"></img></div>
+                    <img className="postimage" src={`${process.env.REACT_APP_API}/${data.image}`} alt="yy"></img></div>
                    <div className='new-divs'> <h2 className="heading"><span style={{ fontWeight: '500',color:'rgb(187,90,58)' }}>{data.title}</span></h2>
                     <span style={{ fontWeight: '500',color:'rgb(187,90,58)'}}>{data.description}</span>
                     <div className="details">
-                    <img className='image' src={`https://socialblogging.onrender.com/${data.image}`} alt='imag1'></img>
+                    <img className='image' src={`${process.env.REACT_APP_API}/${data.image}`} alt='imag1'></img>
                     <div className="name">
                         <span className='namedam'>Damini</span>
                         <div className="details2">

@@ -27,7 +27,6 @@ const Main = () => {
     const dispatch = useDispatch()
     // const [allpost, setPost] = useState([]);
     const { posts } = useSelector((state) => state.post)
-    console.log(posts, "posts")
     const [render, setRender] = useState(false)
 
     useEffect(() => {
@@ -55,7 +54,6 @@ const Main = () => {
                             {posts?.slice(0, 3).map((post, index) => {
                                 const months = ["jan", "feb", "mar", "apr", "may", "june", "july", "aug", "sep", "oct", "nov", "dec"]
                                 const createdDate = new Date(post.created_date)
-                                console.log(createdDate, 'dvjjcreatedDate')
                                 const date = createdDate.getDate()
                                 const monthsindex = createdDate.getMonth()
                                 const year = createdDate.getFullYear()
@@ -95,7 +93,7 @@ const Main = () => {
                     <div className='all-img'>
                         {
                             posts.slice(0,6).map((item, index) => {
-                                return <img className='img1' src={`https://socialblogging.onrender.com/${item.image}`} alt='imag1'></img>
+                                return <img className='img1' src={`${process.env.REACT_APP_API}/${item.image}`} alt='imag1'></img>
 
                             })
                         }

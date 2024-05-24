@@ -1,6 +1,6 @@
 import axios from "axios";
 
-const BASE_URL = "https://socialblogging.onrender.com"
+const BASE_URL = process.env.REACT_APP_API
 const token = localStorage.getItem("token")
 console.log(token,'dsfkmdkfs')
 const API = axios.create({

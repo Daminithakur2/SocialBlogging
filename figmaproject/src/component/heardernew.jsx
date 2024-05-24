@@ -21,7 +21,6 @@ const Heardernew = () => {
 
     const dispatch=useDispatch()
     const posts = useSelector((state)=>state.post)
-    console.log(posts,"esxrcfgvhbj")
 
 
     const [title, setTitle] = useState('')

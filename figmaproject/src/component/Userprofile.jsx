@@ -50,7 +50,7 @@ const Userprofile = () => {
 
       <div className='background'>
         <div className='cover-image'>
-          <img className='cover-img' src={`https://socialblogging.onrender.com/${userInfo?.user?.backgroundphoto}`} alt="" />
+          <img className='cover-img' src={`${process.env.REACT_APP_REACT_APP_API}/${userInfo?.user?.backgroundphoto}`} alt="" />
           <button className='button-diva' onClick={() => setChange(false)}><IoCameraReverseOutline className='icon-s' onClick={() => setChange(false)} />Change photo</button>
           {!Change && <div style={{ position: 'absolute', right: 20, bottom: 250 }}><input type='file' onChange={(e) => {
             if (e.target.files.length) {
@@ -63,7 +63,7 @@ const Userprofile = () => {
             <button className='bcencel' onClick={() => setChange(true)}>cancel</button >&nbsp;&nbsp;&nbsp;&nbsp;<button className='bcencel' onClick={() => updatephoto()}>upload</button></div>}
         </div>
         <div className='diva-three'>
-          <div className='diva-two'><img className='cover-two' src={`https://socialblogging.onrender.com/${userInfo?.user?.profilephoto}`} alt="" /><br></br>
+          <div className='diva-two'><img className='cover-two' src={`${process.env.REACT_APP_REACT_APP_API}/${userInfo?.user?.profilephoto}`} alt="" /><br></br>
             {!photo && <button className='button-9' onClick={() => setPhoto(true)}>Upload Photo</button>}</div>
 
 
@@ -120,7 +120,7 @@ const Userprofile = () => {
                 return (
                   <SwiperSlide key={index}>
                     <div style={{ display: 'inline', borderRadius: 20 }}>
-                      <img style={{ width: 400, height: 500 }} src={`https://socialblogging.onrender.com/${item.image}`} alt='imag1' />
+                      <img style={{ width: 400, height: 500 }} src={`${process.env.REACT_APP_API}/${item.image}`} alt='imag1' />
                     </div>
                   </SwiperSlide>
                 )

@@ -26,7 +26,6 @@ const Allblog = () => {
         {posts?.map((post, index) => {
                         const months = ["jan", "feb", "mar", "apr", "may", "june", "july", "aug", "sep", "oct", "nov", "dec"]
                         const createdDate = new Date(post.created_date)
-                        console.log(createdDate, 'dvjjcreatedDate')
                         const date = createdDate.getDate()
                         const monthsindex = createdDate.getMonth()
                         const year = createdDate.getFullYear()
